@@ -12542,11 +12542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\mcata\\onedrive\\documents\\vscode\\ContextExperiment\\ContextExperiment.csproj",
+      "projectUniqueName": "c:\\Users\\mcata\\onedrive\\documents\\vscode projects\\ContextExperiment\\ContextExperiment.csproj",
       "projectName": "ContextExperiment",
-      "projectPath": "c:\\Users\\mcata\\onedrive\\documents\\vscode\\ContextExperiment\\ContextExperiment.csproj",
+      "projectPath": "c:\\Users\\mcata\\onedrive\\documents\\vscode projects\\ContextExperiment\\ContextExperiment.csproj",
       "packagesPath": "C:\\Users\\mcata\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\mcata\\onedrive\\documents\\vscode\\ContextExperiment\\obj\\",
+      "outputPath": "c:\\Users\\mcata\\onedrive\\documents\\vscode projects\\ContextExperiment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
