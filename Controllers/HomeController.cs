@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using ContextExperiment.Models;
 using Newtonsoft.Json;
 using System.Net.Http;
+using System.IO;
+
 
 namespace ContextExperiment.Controllers
 {
@@ -17,17 +19,30 @@ namespace ContextExperiment.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Distance()
+        public async Task<ContentResult> Distance()
         {
             string origin = new Address("804 Washington St.", "Evanston", "IL", "60202").FullAddressQuery();
             string destination = new Address("138 Abbot Avenue", "Worthington", "OH", "43085").FullAddressQuery();
-            string builder = $"https://maps.googleapis.com/maps/api/distancematrix/json?origins={ origin }&destinations={ destination }";
+            string queryString = $"https://maps.googleapis.com/maps/api/distancematrix/json?origins={ origin }&destinations={ destination }";
 
             HttpClient client = new HttpClient();
-            HttpResponseMessage response = await client.GetAsync(builder);
+            // HttpResponseMessage response = await client.GetAsync(queryString);
 
-            return Content(response.Content.ToString());
+            // response.EnsureSuccessStatusCode();            
+            // string content = await response.Content.ReadAsStringAsync();
+
+            // // return await Task.Run(() => Json(content) );
+            // return Content("lskdjfsldkj");
+
+            HttpResponseMessage response = await client.GetAsync(queryString);
+
+            if (response.IsSuccessStatusCode)
+            {
+
+            }
         }
+
+        public async Task<JsonObject
 
         public IActionResult About()
         {
