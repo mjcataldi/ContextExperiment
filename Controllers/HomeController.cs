@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ContextExperiment.Models;
 using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace ContextExperiment.Controllers
 {
@@ -16,14 +17,16 @@ namespace ContextExperiment.Controllers
             return View();
         }
 
-        public JsonResult Distance()
+        public async Task<IActionResult> Distance()
         {
-            Address address1 = new Address("804 Washington St., #2C", "Evanston", "IL", "60202");
-            Address address2 = new Address("138 Abbot Avenue", "Worthington", "OH", "43085");
-            
-            var jsonAddress1 = JsonConvert.SerializeObject(address1);
+            string origin = new Address("804 Washington St.", "Evanston", "IL", "60202").FullAddressQuery();
+            string destination = new Address("138 Abbot Avenue", "Worthington", "OH", "43085").FullAddressQuery();
+            string builder = $"https://maps.googleapis.com/maps/api/distancematrix/json?origins={ origin }&destinations={ destination }";
 
-            return Json(jsonAddress1);
+            HttpClient client = new HttpClient();
+            HttpResponseMessage response = await client.GetAsync(builder);
+
+            return Content(response.Content.ToString());
         }
 
         public IActionResult About()

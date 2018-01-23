@@ -8,3 +8,13 @@ C:\Users\mcata\onedrive\documents\vscode projects\ContextExperiment\obj\Debug\ne
 C:\Users\mcata\onedrive\documents\vscode projects\ContextExperiment\obj\Debug\netcoreapp2.0\ContextExperiment.AssemblyInfo.cs
 C:\Users\mcata\onedrive\documents\vscode projects\ContextExperiment\obj\Debug\netcoreapp2.0\ContextExperiment.dll
 C:\Users\mcata\onedrive\documents\vscode projects\ContextExperiment\obj\Debug\netcoreapp2.0\ContextExperiment.pdb
+c:\Users\mcata\onedrive\documents\vscode\ContextExperiment\obj\Debug\netcoreapp2.0\ContextExperiment.csproj.CoreCompileInputs.cache
+c:\Users\mcata\onedrive\documents\vscode\ContextExperiment\obj\Debug\netcoreapp2.0\ContextExperiment.AssemblyInfoInputs.cache
+c:\Users\mcata\onedrive\documents\vscode\ContextExperiment\obj\Debug\netcoreapp2.0\ContextExperiment.AssemblyInfo.cs
+c:\Users\mcata\onedrive\documents\vscode\ContextExperiment\obj\Debug\netcoreapp2.0\ContextExperiment.dll
+c:\Users\mcata\onedrive\documents\vscode\ContextExperiment\obj\Debug\netcoreapp2.0\ContextExperiment.pdb
+c:\Users\mcata\onedrive\documents\vscode\ContextExperiment\bin\Debug\netcoreapp2.0\ContextExperiment.deps.json
+c:\Users\mcata\onedrive\documents\vscode\ContextExperiment\bin\Debug\netcoreapp2.0\ContextExperiment.runtimeconfig.json
+c:\Users\mcata\onedrive\documents\vscode\ContextExperiment\bin\Debug\netcoreapp2.0\ContextExperiment.runtimeconfig.dev.json
+c:\Users\mcata\onedrive\documents\vscode\ContextExperiment\bin\Debug\netcoreapp2.0\ContextExperiment.dll
+c:\Users\mcata\onedrive\documents\vscode\ContextExperiment\bin\Debug\netcoreapp2.0\ContextExperiment.pdb
